@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>lista de tarefas</title>
 </head>
 <body>
-    <div class="lista"></div>
+    <div id="tasks-container" class="tarefas">
+        <div id="tasks-header" class="tarefas-cabeçalho">
+            <h2>Salve sua proxima tarefa:</h2>
+            <form action="" id="add-task-from">
+                <input type="text" id="task-title" placeholder="o que vai fazer?">
+                <button id="add-btn" type="submit">
+                    <ion-icon name="add-outline"></ion-icon>            
+                </button>
+            </form>
+        </div>
+        <div id="tasks-list-container" class="lista-de-tarefas">
+            <h2>Estas são suas tarefas:</h2>
+            <ul id="task-list">
+                <li class="task-box">
+                    <span class="task-title">tarefa teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">tarefa teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">tarefa teste</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
 </body>
 </html>
