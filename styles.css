@@ -1,4 +1,54 @@
-.lista {
-    color: red;
-    display:block
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-color: gray;
+    color: orange;
+    text-align: center;
+    padding-top: 30px;
+}
+#tasks-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;/* centralizado o elemento principal */
+}
+#tasks-header { /* tasks form */
+    margin-top: 40px;
+}
+#add-task-form {
+    position: relative;
+}
+#add-task-form input {
+    box-sizing: border-box; /* está propriedade não deixa o input ultrapassa o tamanho do elemento pai */
+    border: 1px solid rebeccapurple;
+    background: #fff;
+    color: rebeccapurple;
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+#add-task-form input:focus{
+    outline: none;
+}
+#add-task-form input::placeholder {
+    color: blueviolet;
+}
+#add-btn {
+    position: absolute;
+    background: #fff;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 52px;
+    top: 0;
+    right: 0;
+    padding-top: 3px;
+}
+#add-btn:hover {
+    background-color: blueviolet;
+    color: #fff;
+}
+ion-icon {
+    font-size: 26px;
 }
